@@ -878,10 +878,10 @@ server8 = getUser :<|> deleteUser
 server9 :: Server UserAPI4
 server9 userid = getUser userid :<|> deleteUser userid
 
-  where getUser :: Int -> Handler User
+  where getUser :: Handler User
         getUser = error "..."
 
-        deleteUser :: Int -> Handler NoContent
+        deleteUser :: Handler NoContent
         deleteUser = error "..."
 ```
 
